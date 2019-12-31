@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>My Clock</title>
+</head>
+<body bgcolor=black text=red topmargin=200><center><font id="f2" size=30 color=yellow></font><font id="f1" face="elephant" size=72>
+<script>
+var name=prompt("Enter your name"," ");
+var here2=document.getElementById("f2");
+here2.innerHTML="Welcome "+name+"! your time is clicking."+"<br/>";
+var here=document.getElementById("f1");
+function printtime()
+{
+var date=new Date();
+var h=date.getHours();
+var m=date.getMinutes();
+var s=date.getSeconds();
+here.innerHTML=h+":"+m+":"+s;
+}
+setInterval(printtime,1000)
+</script>
+</body>
+</html>
